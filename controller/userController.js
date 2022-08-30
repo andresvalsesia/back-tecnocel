@@ -165,7 +165,7 @@ const userController = {
       if (user) {
          user.verification = true
          await user.save()
-         res.redirect(`http://localhost:3000/`)
+         res.redirect(`https://tecnocel-app.herokuapp.com/`)
       }
       else {
          res.json({ success: false, message: 'EL EMAIL NO HA SIDO VERIFICADO!' })
